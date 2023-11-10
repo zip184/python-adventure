@@ -1,6 +1,6 @@
 # Python Adventure
 
-Adam rewrite this file. As you can see, it renders in github.
+Adam rewrite this filgsge. As you can see, it renders in github.
 
 ## Here's a subtitle
 
@@ -27,4 +27,3 @@ This program requires python3, and pip3
 ### How to run
 
 `python3 app.py`
-
