@@ -27,3 +27,7 @@ This program requires python3, and pip3
 ### How to run
 
 `python3 app.py`
+
+### How to updates the pip library requirements file
+
+`pip3 freeze > requirements.txt`
