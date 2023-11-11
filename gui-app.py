@@ -2,9 +2,12 @@ from display import *
 from adventure import *
 
 
-forest = AdventureNode('images/forest.png', 'your in a forest')
-sea = AdventureNode('images/sea.png', 'your in a sea')
-plain = AdventureNode('images/plain.png', 'your on a plain')
+forest = AdventureNode(
+    'images/forest.png', "You're in a deep dark forest and it reminds you of a scary movie. Wilikers!")
+sea = AdventureNode(
+    'images/sea.png', "You're in the sea, and you can't swim! Gosh!")
+plain = AdventureNode(
+    'images/plain.png', "You're in a desert, and you forgot to bring your water bottle. Scary stuff!")
 
 forest.choices = [
     AdventureChoice('go to sea', sea),
