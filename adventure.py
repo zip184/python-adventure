@@ -9,3 +9,10 @@ class AdventureNode:
         self.img = img
         self.description = description
         self.choices = []
+
+    def set_on_arrive(self, on_arrive):
+        self.on_arrive = on_arrive
+
+    def fire_on_arrive(self):
+        if hasattr(self, 'on_arrive'):
+            self.on_arrive()
