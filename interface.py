@@ -26,10 +26,12 @@ class AdventureUserInterface:
         tool_bar.grid(row=2, column=0, padx=20, pady=20)
 
         # Create Weath Display
-        # Description area
-        wealth_label = Label(
-            left_frame, text="", wraplength=200)
+        wealth_label = Label(left_frame, text="")
         wealth_label.grid(row=3, column=0, padx=15, pady=15)
+
+        # Create Experience Display
+        exp_label = Label(left_frame, text="")
+        exp_label.grid(row=4, column=0, padx=15, pady=15)
 
         # Create Image Frame
         img_label = Label(right_frame, image='')
@@ -43,6 +45,7 @@ class AdventureUserInterface:
         self.img_label = img_label
         self.description_label = description_label
         self.wealth_label = wealth_label
+        self.exp_label = exp_label
 
     def display_node(self, node: AdventureNode):
         image = PhotoImage(file=node.img)
@@ -70,8 +73,17 @@ class AdventureUserInterface:
         # Fire events
         node.fire_on_arrive()
 
+        if hasattr(self, 'on_travel'):
+            self.on_travel()
+
     def set_wealth(self, wealth: int):
         self.wealth_label.configure(text='Wealth: ' + str(wealth))
+
+    def set_on_travel(self, on_travel):
+        self.on_travel = on_travel
+
+    def set_exp(self, exp: int):
+        self.exp_label.configure(text="Exp: " + str(exp))
 
     def start(self):
         self.root.mainloop()

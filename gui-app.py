@@ -4,6 +4,7 @@ import random
 
 # State Variables
 wealth = 0
+experience = 0
 
 # Create Display
 main_display = AdventureUserInterface()
@@ -16,6 +17,14 @@ def recieve_treasure():
     wealth += random.randint(200, 1200)
     main_display.set_wealth(wealth)
 
+
+def on_travel():
+    global experience
+    experience += 1
+    main_display.set_exp(experience)
+
+
+main_display.set_on_travel(on_travel)
 
 # Main Nodes
 forest = AdventureNode(
