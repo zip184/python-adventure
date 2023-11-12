@@ -2,7 +2,7 @@ from tkinter import *
 from adventure import *
 
 
-class MainDisplay:
+class AdventureUserInterface:
     def __init__(self):
         root = Tk()  # create root window
         root.title("Python Adventure")  # title of the GUI window

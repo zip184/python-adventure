@@ -1,4 +1,4 @@
-from display import *
+from interface import *
 from adventure import *
 import random
 
@@ -6,7 +6,7 @@ import random
 wealth = 0
 
 # Create Display
-main_display = MainDisplay()
+main_display = AdventureUserInterface()
 
 # Game Events
 
