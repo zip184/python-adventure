@@ -39,23 +39,23 @@ class AdventureUserInterface:
             row=0, column=0, padx=5, pady=5)
 
         self.root = root
-        self.left_frame = left_frame
-        self.right_frame = right_frame
         self.tool_bar = tool_bar
         self.img_label = img_label
         self.description_label = description_label
         self.wealth_label = wealth_label
         self.exp_label = exp_label
 
-    def display_node(self, node: AdventureNode):
+    def __display_node(self, node: AdventureNode):
         image = PhotoImage(file=node.img)
         self.img_label.configure(image=image)
         self.img_label.image = image
 
+    # --- Public Methods ---
+
     def set_choice(self, node: AdventureNode):
         self.node = node
 
-        self.display_node(node)
+        self.__display_node(node)
 
         # Update description label
         self.description_label.configure(text=node.description)
@@ -82,7 +82,6 @@ class AdventureUserInterface:
         if hasattr(self, 'on_travel'):
             self.on_travel()
 
-    # Public methods
     def set_wealth(self, wealth: int):
         self.wealth_label.configure(text='Wealth: ' + str(wealth))
 
