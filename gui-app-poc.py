@@ -40,6 +40,9 @@ treasure_island = AdventureNode(
     'images/treasure-island.png', "You've stumbled upon Treasure Island!!!! Yarrr!")
 treasure_island.set_on_arrive(recieve_treasure)
 
+finish_line = AdventureNode(
+    'images/finish-line.png', "You win! Thanks For Playing!")
+
 # Set node choices
 forest.choices = [
     AdventureChoice('go to plain', plain),
@@ -55,6 +58,7 @@ sea.choices = [
 plain.choices = [
     AdventureChoice('go to forest', forest),
     AdventureChoice('go to sea', sea),
+    AdventureChoice('win the game', finish_line)
 ]
 
 treasure_island.choices = [

@@ -65,10 +65,16 @@ class AdventureUserInterface:
             widget.destroy()
 
         # Build buttons
-        for idx, choice in enumerate(node.choices):
-            image_button = Button(self.tool_bar, text=choice.text,
-                                  command=lambda c=choice: self.set_choice(c.next_node))
-            image_button.grid(row=idx, column=0, padx=5, pady=5)
+        if len(node.choices) == 0:
+            # Default "Quit" button if no buttons are defined for this node
+            image_button = Button(self.tool_bar, text='Quit',
+                                  command=lambda: exit())
+            image_button.grid(row=0, column=0, padx=5, pady=5)
+        else:
+            for idx, choice in enumerate(node.choices):
+                image_button = Button(self.tool_bar, text=choice.text,
+                                      command=lambda c=choice: self.set_choice(c.next_node))
+                image_button.grid(row=idx, column=0, padx=5, pady=5)
 
         # Fire events
         node.fire_on_arrive()
@@ -76,6 +82,7 @@ class AdventureUserInterface:
         if hasattr(self, 'on_travel'):
             self.on_travel()
 
+    # Public methods
     def set_wealth(self, wealth: int):
         self.wealth_label.configure(text='Wealth: ' + str(wealth))
 
