@@ -2,7 +2,6 @@ certifi==2023.7.22
 distlib==0.3.7
 filelock==3.13.0
 Pillow==10.1.0
-pipenv==2023.10.24
 platformdirs==3.11.0
 setuptools==68.2.2
 tk==0.1.0
