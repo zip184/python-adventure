@@ -1,12 +1,14 @@
 # Python Adventure
 
-Adam rewrite this filgsge. As you can see, it renders in github.
+This is an example of a file that I can edit and have updated to github anytime I finish a "draft"
 
 ## Here's a subtitle
 
 Here's some paragraph text
-- Here's some bullets
-- Another one
+- Here's some bullet points
+- 1
+- 2
+- 3
 
 ### Here's a sub-sub-title
 
