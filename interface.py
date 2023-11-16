@@ -52,7 +52,7 @@ class AdventureUserInterface:
 
     # --- Public Methods ---
 
-    def set_choice(self, node: AdventureNode):
+    def set_node(self, node: AdventureNode):
         self.node = node
 
         self.__display_node(node)
@@ -73,7 +73,7 @@ class AdventureUserInterface:
         else:
             for idx, choice in enumerate(node.choices):
                 image_button = Button(self.tool_bar, text=choice.text,
-                                      command=lambda c=choice: self.set_choice(c.next_node))
+                                      command=lambda c=choice: self.set_node(c.next_node))
                 image_button.grid(row=idx, column=0, padx=5, pady=5)
 
         # Fire events

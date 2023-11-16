@@ -69,7 +69,7 @@ treasure_island.choices = [
 ]
 
 # --- Set starting node ---
-main_display.set_choice(forest)
+main_display.set_node(forest)
 
 # --- Set initial state ---
 main_display.set_wealth(0)
