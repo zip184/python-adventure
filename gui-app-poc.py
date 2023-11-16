@@ -22,13 +22,13 @@ main_display.set_on_travel(on_travel)
 
 # --- Main Nodes ---
 forest = AdventureNode(
-    'images/forest.png', "You're in a deep dark forest and it reminds you of a scary movie. Wilikers!")
+    'images/forest.png', "You're in a deep dark forest and it reminds you of a scary movie. Get out quick!")
 
 sea = AdventureNode(
-    'images/sea.png', "You're in the sea, and you can't swim! Gosh!")
+    'images/sea.png', "You're in the sea, and you can't swim! Get to land quickly!")
 
 plain = AdventureNode(
-    'images/plain.png', "You're in a desert, and you forgot to bring your water bottle. Scary stuff!")
+    'images/plain.png', "You're in a desert, and you're suffering from dehydration. Be careful!")
 
 # Example of node that updates state
 
