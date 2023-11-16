@@ -19,6 +19,8 @@ Here's some paragraph text
 ### Requirements
 
 This program requires python3, and pip3
+python3 is the newest version of python
+pip3 is the command line tool to install python 3 modules
 
 ### How to install
 
