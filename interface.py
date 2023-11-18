@@ -3,9 +3,9 @@ from adventure import *
 
 
 class AdventureUserInterface:
-    def __init__(self):
+    def __init__(self, title):
         root = Tk()  # create root window
-        root.title("Python Adventure")  # title of the GUI window
+        root.title(title)  # title of the GUI window
         # specify the max size the window can expand to
         root.maxsize(1100, 800)
         root.config(bg="skyblue")  # specify background color

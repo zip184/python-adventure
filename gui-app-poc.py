@@ -8,7 +8,7 @@ wealth = 0
 experience = 0
 
 # Create Display
-main_display = AdventureUserInterface()
+main_display = AdventureUserInterface("Python Adventure Prood of Concept")
 
 
 # Shows how to run code for every time location change event

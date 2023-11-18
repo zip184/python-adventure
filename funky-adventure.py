@@ -9,7 +9,7 @@ experience = 0
 did_listen_to_radio = False
 
 # Create Display
-main_display = AdventureUserInterface()
+main_display = AdventureUserInterface("Funky Adventure!")
 
 
 # Shows how to run code for every time location change event
