@@ -6,7 +6,8 @@ class AdventureUserInterface:
     def __init__(self):
         root = Tk()  # create root window
         root.title("Python Adventure")  # title of the GUI window
-        root.maxsize(900, 600)  # specify the max size the window can expand to
+        # specify the max size the window can expand to
+        root.maxsize(1100, 800)
         root.config(bg="skyblue")  # specify background color
 
         # Create left and right frames
@@ -18,7 +19,7 @@ class AdventureUserInterface:
 
         # Description area
         description_label = Label(
-            left_frame, text="description label", wraplength=200)
+            left_frame, text="description label", wraplength=350, font=("Arial", 20))
         description_label.grid(row=0, column=0, padx=15, pady=15)
 
         # Create tool bar frame
