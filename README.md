@@ -2,21 +2,6 @@
 Mr. Lake is tired of my presentation
 This is an example of a file that I can edit and have updated to github anytime I finish a "draft"
 
-## Here's a subtitle
-
-Here's some paragraph text
-- Here's some bullet points
-- 1
-- 2
-- 3
-
-### Here's a sub-sub-title
-
-Numbered list
-1. one
-2. two
-3. three
-
 ## Project Information
 
 Collaborated on GitHub
